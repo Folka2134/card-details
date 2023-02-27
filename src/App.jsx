@@ -25,7 +25,76 @@ function App() {
           </div>
         </div>
       </div>
-      <main className="">text</main>
+      <main className="p-10 mt-12">
+        <form className="flex flex-col justify-evenly h-96">
+          <div>
+            <label
+              className="text-sm font-semibold tracking-wider uppercase"
+              htmlFor="cardName"
+            >
+              Cardholder Name
+            </label>
+            <input
+              className="w-full p-2 border-2 border-gray-300 mt-2"
+              type="text"
+              placeholder="e.g Jane Appleseed"
+            />
+          </div>
+          <div>
+            <label
+              className="text-sm font-semibold tracking-wider uppercase"
+              htmlFor="cardNumber"
+            >
+              Card Number
+            </label>
+            <input
+              className="w-full p-2 border-2 border-gray-300 mt-2"
+              type="text"
+              placeholder="e.g 1234 5678 9123 0000"
+            />
+          </div>
+          <div className="flex justify-between">
+            <div className="flex flex-col">
+              <label
+                className="text-sm font-semibold tracking-wider uppercase"
+                htmlFor="cardNumber"
+              >
+                Exp. Date (mm/yy)
+              </label>
+              <div className="flex">
+                <input
+                  className="w-14 p-2 border-2 border-gray-300 mr-3 mt-2"
+                  type="text"
+                  placeholder="MM"
+                />
+                <input
+                  className="w-14 p-2 border-2 border-gray-300 mr-3 mt-2"
+                  type="text"
+                  placeholder="YY"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <label
+                className="text-sm font-semibold tracking-wider uppercase"
+                htmlFor="cardNumber"
+              >
+                CVC
+              </label>
+              <input
+                className="w-28 p-2 border-2 border-gray-300 mr-3 mt-2"
+                type="text"
+                placeholder="e.g 123"
+              />
+            </div>
+          </div>
+          <input
+            className="bg-[#21082F] text-white p-4 rounded-xl"
+            type="submit"
+            value="Confirm"
+          />
+        </form>
+      </main>
     </div>
   );
 }
